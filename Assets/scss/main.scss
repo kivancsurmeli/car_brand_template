@@ -1,0 +1,1467 @@
+// Fonts
+
+@font-face {
+    font-family: "p-black";
+    src: url("../font/Proxima-Nova-Black.otf");
+}
+
+@font-face {
+    font-family: "p-bold";
+    src: url("../font/Proxima-Nova-Bold.otf");
+}
+
+@font-face {
+    font-family: "p-regular";
+    src: url("../font/Proxima-Nova-Regular.otf");
+}
+
+@font-face {
+    font-family: "p-thin";
+    src: url("../font/Proxima-Nova-Thin.otf");
+}
+
+// Variables
+
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 10px;
+    max-width: 1920px;
+}
+
+body {
+    font-size: 1.6rem;
+}
+
+@mixin centerize {
+    justify-content: center;
+    align-items: center;
+    display: flex;
+}
+
+button {
+    &:focus {
+        outline: none;
+    }
+}
+
+button {
+    &:active {
+        outline: none;
+    }
+}
+
+.mt-negative-2 {
+    margin: -2px;
+}
+
+.right-border {
+    border-right: 1px solid #a8a9ad;
+    height: 89px;
+
+}
+
+.centered-50 {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.container-fluid {
+    padding: 0px;
+}
+
+.dropdown-menu {
+    margin: auto;
+}
+
+.dropdown-item {
+    text-align: center;
+    min-width: 185px;
+    ;
+}
+
+// Navbar
+
+
+navigation {
+    font-family: "p-regular";
+    font-size: 14px;
+}
+
+.navbar {
+    padding: 0px;
+    margin: 0px;
+}
+
+.x-logo {
+    width: 160px;
+    height: 70px;
+    padding: 0px 45px;
+    border-right: 1px solid #e6e6e6;
+}
+
+.navbar-nav {
+    width: 100%;
+}
+
+.nav-item {
+    width: 100%;
+    height: 70px;
+    text-align: center;
+    @include centerize;
+    padding: 0px;
+    margin: 0px;
+    border-right: 1px solid #e6e6e6;
+
+    .nav-link {
+        &:hover {
+            color: #b50938 !important;
+        }
+    }
+}
+
+.navbar-toggler {
+    border-left: 1px solid #e6e6e6;
+    width: 70px;
+    height: 70px;
+    padding: 0px;
+}
+
+.models-btn,
+.dropdown-item {
+    font-family: "p-thin";
+    font-size: 14px;
+    color: #68737a;
+}
+
+.models-btn {
+    &:focus {
+        outline: none;
+    }
+}
+
+// Main
+
+.carousel-inner img {
+    max-width: 100%;
+}
+
+.carousel-indicators li {
+    margin-right: 20px;
+}
+
+.carousel-caption {
+    position: absolute;
+    top: 15.5rem;
+    left: 5rem;
+}
+
+.slider-header-1 {
+    color: #b50938;
+    font-family: "p-regular";
+    font-size: 2.08333333vw;
+    margin-bottom: -1.8rem;
+}
+
+.slider-header-2 {
+    color: #b50938;
+    font-family: "p-bold";
+    font-size: 4.16666667vw;
+    letter-spacing: -0.2rem;
+    word-spacing: -0.8rem;
+}
+
+.slider-line {
+    background-color: #b50938;
+    width: 4.166666667vw;
+    height: 0.3rem;
+    margin-top: 0.2rem;
+    margin-left: 0.5rem;
+}
+
+.slider-description {
+    color: #231f20;
+    font-family: "p-regular";
+    font-size: 1.25vw;
+    margin-top: 2.5rem;
+    margin-left: 0.3rem;
+    line-height: 1.3;
+}
+
+.incele-btn {
+    background-color: #b50938;
+    width: 6.7708333vw;
+    height: 2.29166667vw;
+    font-family: "p-regular";
+    font-size: 0.72916667vw;
+    margin-top: 3.125vw;
+    @include centerize;
+    border: none;
+    color: white;
+
+    &:hover {
+        background-color: #e8104b;
+        transition: 0.3s;
+    }
+}
+
+.modelini-bul {
+    max-width: 100%;
+
+    .heart-pic-container {
+        position: absolute;
+        top: 8.85416667vw;
+        left: 6.25833333vw;
+    }
+
+    .heart-big {
+        width: 12.03125vw;
+    }
+
+    .widgets {
+        text-align: center;
+
+        .widget-text {
+            font-family: "p-regular";
+            font-size: 1.25vw;
+            min-width: 240px;
+            margin-top: 172px;
+            color: #b50938;
+        }
+
+        .bul-btn {
+            color: white;
+            width: 6.77083333vw;
+            height: 2.29166667vw;
+            background-color: #b50938;
+            font-family: "p-regular";
+            font-size: 0.72916667vw;
+            margin: auto;
+            margin-top: 1.04166667vw;
+            @include centerize;
+            border: none;
+
+            &:hover {
+                background-color: #e8104b;
+                transition: 0.3s;
+            }
+        }
+    }
+}
+
+.modelini-bul-mini {
+    max-width: 100%;
+
+    .heart-pic-container-mini {
+        position: absolute;
+        top: 0.78125vw;
+        right: 3.125vw;
+    }
+
+    .heart-mini {
+        margin-right: 4.125vw;
+        width: 32.8125vw;
+    }
+
+    .widgets-mini {
+        text-align: center;
+        position: absolute;
+        top: 6.25vw;
+        right: 4.125vw;
+
+        .widget-text-mini {
+            font-family: "p-regular";
+            font-size: 3.4375vw;
+            min-width: 37.5vw;
+            color: #b50938;
+        }
+
+        .bul-btn-mini {
+            width: 32.96vw;
+            height: 11vw;
+            background-color: #b50938;
+            font-family: "p-bold";
+            font-size: 4.375vw;
+            margin: auto;
+            margin-top: 0.78125vw;
+            @include centerize;
+            color: white;
+            border: none;
+
+            &:hover {
+                background-color: #e8104b;
+                transition: 0.3s;
+            }
+        }
+    }
+}
+
+.h-menu-s-bul {
+
+    width: 12.4vw;
+    height: 5.20833333vw;
+    background-color: #d3d4d6;
+    @include centerize;
+    border: none;
+    font-family: "p-bold";
+    color: #68737a;
+}
+
+
+.selected-button {
+    border: none !important;
+    background-color: #fff !important;
+    border-top: 2px solid #b50536 !important;
+}
+
+.max-h {
+    max-height: 100px;
+}
+
+.inclusive {
+    margin-top: 3rem;
+    margin-left: 3rem;
+    margin-right: 3rem;
+}
+
+.hizli-menu-widgets {
+
+    width: 20.4rem;
+    height: 8.7rem;
+    display: inline-block;
+    @include centerize;
+
+    .widget-description {
+        width: 10rem;
+        margin-left: 2rem;
+        font-family: "p-regular";
+        font-size: 1.4rem;
+        color: #68737a;
+        line-height: 1;
+    }
+}
+
+// Section-1
+
+.kesfedin-header {
+    text-align: center;
+    font-family: "p-bold";
+    font-size: 1.875vw;
+    color: #68737a;
+    margin-top: 40px;
+}
+
+.otomobil-ticari-btn {
+    @include centerize;
+    font-family: "p-bold";
+    margin-top: 15px;
+}
+
+.car-btn {
+    border: none;
+    background-color: #e5e5e6;
+    color: #adb1b5;
+    width: 132px;
+    height: 39px;
+}
+
+.selected-button-2 {
+    border: none;
+    background-color: #f2f2f2;
+    color: #68737a;
+    width: 132px;
+    height: 44px;
+    margin-right: 2px;
+}
+
+.kesfedin-slider {
+    margin-top: 36px !important;
+    margin-bottom: 105px !important;
+    margin: auto;
+    max-width: 1200px;
+
+    .car-pic img {
+        padding-right: 25px;
+        padding-left: 25px;
+    }
+
+    .car-model {
+        font-family: "p-bold";
+        font-size: 16px;
+        color: #68737a;
+    }
+
+    .car-text {
+        font-family: "p-regular";
+        font-size: 14px;
+        color: #68737a;
+    }
+
+    .owl-dot,
+    .owl-dots {
+        display: none;
+    }
+
+    .owl-next {
+        position: absolute;
+        top: 20%;
+        right: -80px;
+    }
+
+    .owl-prev {
+        position: absolute;
+        top: 20%;
+        left: -80px;
+
+    }
+}
+
+.ticari-container {
+    height: 25px;
+}
+
+// Section-2
+
+.x500x-container {
+    height: 497px;
+    background-color: #68737a;
+}
+
+.x500x-logo {
+    @include centerize;
+    padding-top: 60px;
+}
+
+.x500x-text {
+    @include centerize;
+    font-family: "p-regular";
+    font-size: 20px;
+    color: white;
+    text-align: center;
+    margin-top: 20px;
+}
+
+.cars-img {
+    @include centerize;
+
+    .crosplus-btn {
+        @include centerize;
+        margin-top: -25px;
+    }
+
+    .popstar-btn {
+        @include centerize;
+        margin-top: -25px;
+    }
+
+    .car-btn {
+        border: none;
+        background-color: #b50938;
+        color: white;
+        width: 150px;
+        height: 44px;
+        text-align: center;
+        font-family: "p-bold";
+
+        &:hover {
+            background-color: #e8104b;
+            transition: 0.3s;
+        }
+    }
+}
+
+// Section-3
+
+.tech-cont {
+    height: 535px;
+    background-color: #e5e5e6;
+
+    .tech-main-header {
+        font-family: "p-bold";
+        font-size: 36px;
+        color: #68737a;
+        text-align: center;
+        padding-top: 40px;
+        padding-bottom: 40px;
+    }
+}
+
+.tech-slider {
+    margin: auto;
+    max-width: 1200px;
+
+    .tech-pic {
+        padding-right: 15px;
+        padding-left: 15px;
+    }
+
+    .tech-pic img {
+        border-bottom: 2px solid #af0936;
+    }
+
+    .tech-header {
+        font-family: "p-bold";
+        font-size: 16px;
+        color: #68737a;
+        margin-top: 25px;
+    }
+
+    .tech-text {
+        font-family: "p-regular";
+        font-size: 14px;
+        color: #68737a;
+        margin-top: 10px;
+    }
+
+    .owl-dot,
+    .owl-dots {
+        display: none;
+    }
+
+    .owl-next {
+        position: absolute;
+        top: 70px;
+        right: -80px;
+    }
+
+    .owl-prev {
+        position: absolute;
+        top: 70px;
+        left: -80px;
+
+    }
+}
+
+// Footer
+
+.footer-container {
+    max-width: 1200px;
+    margin: auto;
+    height: 450px;
+
+
+    .social-media {
+        padding-top: 40px;
+    }
+
+    .social-media img {
+        padding-right: 8px;
+        padding-left: 8px;
+
+        &:hover {
+            opacity: 0.8;
+            transition: 0.7s;
+        }
+    }
+
+    .call-center-container {
+        text-align: right;
+        padding-top: 50px;
+
+        .call-center {
+            font-family: "p-regular";
+            font-size: 16px;
+            color: #68737a;
+            padding-right: 15px;
+        }
+
+        .number {
+            font-family: "p-bold";
+            font-size: 16px;
+            color: #68737a;
+            padding-left: 10px;
+            padding-right: 10px;
+            height: 27px;
+            border-left: 1px solid #e5e5e6;
+        }
+    }
+
+    .footer-line {
+        margin-top: 30px;
+        margin-bottom: 30px;
+    }
+
+    li {
+        list-style-type: none;
+        margin-bottom: 5px;
+    }
+
+    .footer-mini-header {
+        font-family: "p-bold";
+        font-size: 14px;
+        color: #68737a;
+        margin-bottom: 10px;
+    }
+
+    .footer-list-object {
+        font-family: "p-regular";
+        font-size: 14px;
+        color: #68737a;
+
+        &:hover {
+            color: #b50938;
+        }
+    }
+
+    .copyright-logo-container {
+
+        position: relative;
+
+        .copyright-logo {
+            position: absolute;
+            top: 37px;
+        }
+
+        .half-footer-line {
+            margin-top: 50px;
+            width: 80%;
+            float: right;
+        }
+    }
+}
+
+// Media-Quaries
+
+@media (min-width: 1px) and (max-width: 440px) {
+
+    html {
+        font-size: 3px;
+    }
+
+    .p-lr {
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+
+    .mt-20 {
+        margin-top: 20px !important;
+    }
+
+    .mb-20 {
+        margin-bottom: 20px !important;
+    }
+
+    .models-btn {
+        font-family: "p-thin";
+        font-size: 16px;
+        color: #68737a;
+    }
+
+    .x-logo {
+        width: 120px;
+        margin-left: -35px;
+    }
+
+    .dropdown-item {
+        text-align: center;
+        min-width: 102px;
+    }
+
+    .modelini-bul {
+        display: none;
+    }
+
+    .nav-item {
+        width: 320px;
+        border-bottom: 1px solid #e6e6e6;
+        text-align: center !important;
+    }
+
+    .navbar-collapse {
+        position: absolute;
+        top: 100%;
+        right: 0px;
+        z-index: 100;
+        background-color: #ffff;
+    }
+
+    .bul-container {
+        min-width: 100%;
+    }
+
+    .heart-mini {
+        padding-right: 10px;
+        min-width: 114px;
+    }
+
+    .widgets-mini {
+        margin-right: 10px;
+    }
+
+    .widget-btn-mini {
+        height: 35px !important;
+    }
+
+    .widget-text {
+        font-size: 18px !important;
+        margin-top: 130px !important;
+    }
+
+    .widget-btn {
+        width: 100px !important;
+        height: 34px !important;
+        font-size: 12px !important;
+        margin-top: 5px !important;
+    }
+
+    .h-menu-s-bul {
+        width: 43.875vw;
+        height: 15.675vw;
+    }
+
+    .hizli-menu {
+        font-size: 4.375vw;
+        font-family: "p-bold";
+    }
+
+    .satis-bul {
+        font-size: 4.375vw;
+        font-family: "p-bold";
+    }
+
+    .hizli-menu-widgets {
+        width: 140px;
+        height: 60px;
+    }
+
+    .inclusive {
+        padding-top: 25px;
+        margin: auto;
+
+        .widget-description {
+            width: 80px;
+            font-size: 3vw;
+        }
+    }
+
+    .otomobil-btn,
+    .ticari-btn {
+        font-size: 14px;
+    }
+
+    .kesfedin-container {
+        margin-top: 125px;
+    }
+
+    .kesfedin-header {
+        font-size: 28px;
+    }
+
+    .kesfedin-slider {
+        max-width: 160px;
+        margin-top: 50px !important;
+        margin-bottom: 75px !important;
+    }
+
+    .x500x-container {
+        height: 140vw !important;
+    }
+
+    .x500x-text {
+        font-size: 5.625vw;
+        width: 93.75vw;
+        margin: auto;
+        margin-top: 40px;
+
+        .space {
+            display: none;
+        }
+    }
+
+    .right-border {
+        margin-bottom: 70px;
+    }
+
+    .car-btn {
+        width: 39.0625vw !important;
+        height: 12.5vw !important;
+        font-size: 4.375vw !important;
+        font-family: "p-bold";
+        margin-top: 10.6875vw;
+    }
+
+    .social-media {
+        text-align: center;
+
+        .social-icon {
+            width: 50px !important;
+        }
+    }
+
+    .call-center {
+        float: left;
+        text-align: left;
+        width: 100%;
+        margin-bottom: 20px;
+    }
+
+    .bl-none {
+        border-left: none !important;
+        margin-left: -10px;
+    }
+
+    .number {
+        float: left;
+        font-size: 12px !important;
+        height: 20px !important;
+    }
+
+    .footer-list-container {
+        margin: auto;
+    }
+
+    .tech-slider {
+        max-width: 160px;
+    }
+
+    .carousel-caption {
+        top: 20px;
+    }
+
+    .slider-header-1 {
+        font-size: 4.0625vw;
+    }
+
+    .slider-header-2 {
+        font-size: 7.8125vw;
+    }
+
+    .slider-description {
+        font-size: 4vw;
+    }
+
+    .incele-btn {
+        display: none;
+    }
+
+    .kesfedin-header {
+        font-size: 6.25vw;
+    }
+}
+
+
+
+@media (min-width: 440px) and (max-width: 640px) {
+
+    html {
+        font-size: 4.3px;
+    }
+
+    .p-lr {
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+
+    .mt-20 {
+        margin-top: 20px !important;
+    }
+
+    .mb-20 {
+        margin-bottom: 20px !important;
+    }
+
+    .models-btn {
+        font-family: "p-thin";
+        font-size: 28px;
+        color: #68737a;
+    }
+
+    .dropdown-item {
+        text-align: center;
+        min-width: 177px;
+    }
+
+    .nav-item {
+        width: 540px;
+        border-bottom: 1px solid #e6e6e6;
+    }
+
+    .navbar-collapse {
+        position: absolute;
+        top: 100%;
+        right: 0px;
+        z-index: 100;
+        background-color: #ffff;
+    }
+
+    .modelini-bul {
+        display: none;
+    }
+
+    .bul-container {
+        min-width: 100%;
+    }
+
+    .widget-text {
+        font-size: 18px !important;
+        margin-top: 130px !important;
+    }
+
+    .widget-btn {
+        width: 100px !important;
+        height: 34px !important;
+        font-size: 12px !important;
+        margin-top: 5px !important;
+    }
+
+    .h-menu-s-bul {
+        width: 46.875vw;
+        height: 15.675vw;
+    }
+
+    .hizli-menu {
+        font-size: 3.875vw;
+        font-family: "p-bold";
+    }
+
+    .satis-bul {
+        font-size: 3.875vw;
+        font-family: "p-bold";
+    }
+
+    .hizli-menu-widgets {
+        width: 140px;
+        height: 60px;
+    }
+
+    .inclusive {
+        padding-top: 25px;
+        margin: auto;
+
+        .widget-description {
+            width: 80px;
+            font-size: 2.1vw;
+        }
+    }
+
+    .otomobil-btn,
+    .ticari-btn {
+        font-size: 14px;
+    }
+
+    .kesfedin-container {
+        margin-top: 185px;
+    }
+
+    .kesfedin-slider {
+        max-width: 290px;
+        margin-top: 50px !important;
+        margin-bottom: 75px !important;
+    }
+
+    .x500x-container {
+        height: 112.5vw !important;
+    }
+
+    .x500x-text {
+        font-size: 5.625vw;
+        width: 93.75vw;
+        margin: auto;
+        margin-top: 40px;
+
+        .space {
+            display: none;
+        }
+    }
+
+    .right-border {
+        margin-bottom: 70px;
+    }
+
+    .car-btn {
+        width: 39.0625vw !important;
+        height: 12.5vw !important;
+        font-size: 4.375vw !important;
+        font-family: "p-bold";
+        margin-top: 5.6875vw;
+    }
+
+    .social-media {
+        text-align: center;
+
+        .social-icon {
+            width: 70px !important;
+        }
+    }
+
+    .call-center {
+        float: left;
+        text-align: left;
+        width: 100%;
+        margin-bottom: 20px;
+    }
+
+    .bl-none {
+        border-left: none !important;
+        margin-left: -10px;
+    }
+
+    .number {
+        float: left;
+    }
+
+    .footer-list-container {
+        margin: auto;
+    }
+
+    .tech-slider {
+        max-width: 290px;
+    }
+
+    .carousel-caption {
+        top: 30px;
+    }
+
+    .slider-header-1 {
+        font-size: 4.0625vw;
+    }
+
+    .slider-header-2 {
+        font-size: 7.8125vw;
+    }
+
+    .slider-description {
+        font-size: 4vw;
+    }
+
+    .incele-btn {
+        display: none;
+    }
+
+    .kesfedin-header {
+        font-size: 6.25vw;
+    }
+}
+
+
+@media (min-width: 641px) and (max-width: 768px) {
+
+    html {
+        font-size: 6px;
+    }
+
+    .dropdown-item {
+        text-align: center;
+        min-width: 97px;
+    }
+
+    .nav-item {
+        width: 365px;
+        border-bottom: 1px solid #e6e6e6;
+
+        .dropdown-menu {
+            width: 365px;
+        }
+    }
+
+    .navbar-collapse {
+        position: absolute;
+        top: 100%;
+        right: 0px;
+        z-index: 100;
+        background-color: #ffff;
+    }
+
+    .modelini-bul-mini {
+        display: none;
+    }
+
+    .widget-text {
+        font-size: 18px !important;
+        margin-top: 130px !important;
+    }
+
+    .h-menu-s-bul {
+        width: 25vw;
+        height: 9.11458333vw;
+    }
+
+    .inclusive {
+        margin-top: 35px;
+
+        .widget-description {
+            font-size: 12px;
+        }
+    }
+
+    .car-btn {
+        margin-top: 20px;
+        font-size: 16px;
+    }
+
+    .social-media {
+        text-align: center;
+
+        .social-icon {
+            width: 70px;
+        }
+    }
+
+    .call-center {
+        float: left;
+        text-align: left;
+        width: 100%;
+    }
+
+    .number {
+        float: left;
+        text-align: left;
+        margin-top: 20px;
+    }
+
+    .bl-none {
+        border-left: none !important;
+        margin-left: -10px;
+    }
+
+    .heart-pic-container {
+        position: absolute !important;
+        top: 17.578125vw !important;
+        left: 12.890625vw !important;
+    }
+
+    .heart-big {
+        width: 23.3097881vw !important;
+    }
+
+    .kesfedin-slider {
+        max-width: 450px;
+    }
+
+    .tech-slider {
+        max-width: 450px;
+    }
+
+    .slider-header-1 {
+        font-size: 3.38541667vw;
+    }
+
+    .slider-header-2 {
+        font-size: 7.03125vw;
+    }
+
+    .slider-description {
+        font-size: 2.86458333vw;
+    }
+
+    .incele-btn {
+        display: none;
+    }
+
+    .widget-text {
+        margin-top: 18.3562059vw !important;
+        margin-bottom: 2.21997982vw !important;
+    }
+
+    .widget-btn {
+        margin: auto;
+    }
+
+    .bul-btn {
+        width: 16.9270833vw !important;
+        height: 5.72916667vw !important;
+        font-size: 1.93743693vw !important;
+    }
+
+    .kesfedin-header {
+        font-size: 3.90625vw;
+    }
+}
+
+
+@media (min-width: 768px) and (max-width: 991px) {
+
+    html {
+        font-size: 7px;
+    }
+
+    .nav-item {
+        width: 365px;
+        border-bottom: 1px solid #e6e6e6;
+    }
+
+    .navbar-collapse {
+        position: absolute;
+        top: 100%;
+        right: 0px;
+        z-index: 100;
+        background-color: #ffff;
+    }
+
+    .modelini-bul-mini {
+        display: none;
+    }
+
+    .h-menu-s-bul {
+        width: 25vw;
+        height: 11vw;
+    }
+
+    .inclusive {
+        margin-top: 40px;
+
+        .widget-description {
+            font-size: 12px;
+        }
+    }
+
+    .car-btn {
+        margin-top: 10px;
+        font-size: 16px;
+    }
+
+    .call-center {
+        float: left;
+        text-align: left;
+        width: 100%;
+        margin-top: -12px;
+    }
+
+    .number {
+        float: left;
+        text-align: left;
+    }
+
+    .bl-none {
+        border-left: none !important;
+        margin-left: -10px;
+    }
+
+    .heart-pic-container {
+        position: absolute !important;
+        top: 17.1543895vw !important;
+        left: 13.6226034vw !important;
+    }
+
+    .heart-big {
+        width: 23.3097881vw !important;
+    }
+
+    .kesfedin-slider {
+        max-width: 615px;
+    }
+
+    .tech-slider {
+        max-width: 615px;
+    }
+
+    .slider-header-1 {
+        font-size: 4.03632694vw
+    }
+
+    .slider-header-2 {
+        font-size: 8.07265388vw;
+    }
+
+    .slider-description {
+        font-size: 2.42179617vw;
+    }
+
+    .incele-btn {
+        width: 13.1180626vw;
+        height: 4.43995964vw;
+        font-size: 1.41271443vw;
+    }
+
+    .widget-text {
+        margin-top: 17.3562059vw !important;
+        margin-bottom: 2.21997982vw !important;
+        font-size: 1.93743693vw !important;
+    }
+
+    .bul-btn {
+        width: 13.1180626vw !important;
+        height: 4.43995964vw !important;
+        font-size: 1.41271443vw !important;
+    }
+
+    .kesfedin-header {
+        font-size: 3.63269425vw;
+    }
+}
+
+
+@media (min-width: 992px) and (max-width: 1368px) {
+
+    html {
+        font-size: 7px;
+    }
+
+    .nav-item {
+        width: 365px;
+        border-bottom: 1px solid #e6e6e6;
+    }
+
+    .inclusive {
+        margin-top: 10px;
+    }
+
+    .car-btn {
+        margin-top: 10px;
+        font-size: 16px;
+    }
+
+    .modelini-bul-mini {
+        display: none;
+    }
+
+    .hizli-menu-widgets {
+        height: 60px !important;
+
+        .widget-icon img {
+            width: 35px;
+        }
+    }
+
+    .navbar-collapse {
+        position: absolute;
+        top: 100%;
+        right: 0px;
+        z-index: 100;
+        background-color: #ffff;
+    }
+
+    .widget-text {
+        font-size: 1.16959064vw !important;
+        min-width: 28.645vw !important;
+        margin-top: 10.1374269vw !important;
+    }
+
+    .widget-btn {
+        width: 220px;
+        margin: auto;
+    }
+
+    .bul-btn {
+        width: 9.502924vw !important;
+        height: 2.8vw !important;
+        font-size: 1.02339181vw !important;
+    }
+
+    .kesfedin-slider {
+        max-width: 720px;
+    }
+
+    .tech-slider {
+        max-width: 720px;
+    }
+
+    .slider-header-1 {
+        font-size: 2.92397661vw;
+    }
+
+    .slider-header-2 {
+        font-size: 5.84795322vw;
+    }
+
+    .slider-description {
+        font-size: 1.75438596vw;
+    }
+
+    .incele-btn {
+        width: 9.502924vw;
+        height: 3.19303338vw;
+        font-size: 1.02339181vw;
+    }
+
+
+    .kesfedin-header {
+        font-size: 2.63157895vw;
+    }
+}
+
+
+@media (min-width: 1368px) and (max-width:1600px) {
+
+    html {
+        font-size: 8px;
+    }
+
+    .widget-text {
+        font-size: 1.25vw !important;
+        min-width: 13.75vw !important;
+        margin-top: 9.5vw !important;
+    }
+
+    .widget-btn {
+        width: 220px;
+        margin: auto;
+    }
+
+    .bul-btn {
+        width: 8.125vw !important;
+        height: 2.75vw !important;
+        font-size: 0.875vw !important;
+        margin-top: 1vw !important;
+    }
+
+    .car-btn {
+        margin-top: 10px;
+        font-size: 16px;
+    }
+
+    .modelini-bul-mini {
+        display: none;
+    }
+
+
+    .slider-header-1 {
+        font-size: 2.5vw
+    }
+
+    .slider-header-2 {
+        font-size: 5vw;
+    }
+
+    .slider-description {
+        font-size: 1.5vw;
+    }
+
+    .incele-btn {
+        width: 8.125vw;
+        height: 2.75vw;
+        font-size: 0.875vw;
+    }
+
+    .kesfedin-header {
+        font-size: 2.25vw;
+    }
+}
+
+
+
+@media (min-width: 768px) and (max-width: 1920px) {
+    .dropdown {
+        display: none;
+    }
+
+    .car-btn {
+        margin-top: 10px;
+        font-size: 16px;
+    }
+
+    .modelini-bul-mini {
+        display: none;
+    }
+}
+
+@media (min-width: 1920px) and (max-width: 3000px) {
+    .dropdown {
+        display: none;
+    }
+
+    .car-btn {
+        margin-top: 10px;
+        font-size: 16px;
+    }
+
+    .modelini-bul-mini {
+        display: none;
+    }
+}
